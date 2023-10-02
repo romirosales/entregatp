@@ -1,0 +1,261 @@
+/*font-family: 'Open Sans', sans-serif;*/
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+header{
+    background-color: lightskyblue;
+    padding: 16px 0;/*el primer parametro es Y, y el segundo es x*/ 
+}
+header h1{
+    color:white;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 40px;
+    display: inline-block;
+    position: relative;
+    bottom: 35px;
+    margin-left: 10px;
+}
+nav{
+    background-color: gray;
+    margin-bottom: 20px;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+nav ul li{
+    flex-grow: 1;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    /*display: block;
+    text-align: center;*/
+    display: flex;
+    justify-content: center;
+}
+nav ul li a:hover{
+    background: rgba(0,0,0,0.3);/*la a de rgba es para sacar opacidad*/
+    transition: all 0.5s ease;
+}
+nav ul li a.activo{/*va pegado a la (a)cuando es una clase que solo va dirigida a un elemtneo particular y no a todos los hijos*/
+    background-color: grey;
+}
+footer{
+    background-color: #ddd;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+    list-style: none;
+}
+.holder{
+   max-width:960px ; 
+    margin:auto ;
+    
+}
+.homeimg{
+    
+width: 70vw;
+display: flex;
+justify-content: center;
+
+}
+
+.homeimg img{
+    width: 600px;
+    height: 300px;
+}
+
+
+
+.columnas{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    
+}
+.bienvenidos{
+    width: 75%;
+}
+.niveles{
+width: 25%;
+}
+.nivel{
+    background-color: #ddd;
+    padding: 16px;
+    
+}
+.instituto img{
+    width: 600px;
+    height: 300px; 
+}
+
+
+/* 1-fin del home*/
+
+/* 2-comienzo de Nosotros*/
+
+.historia p{
+    font-size: 13px;
+}
+.personas{
+    display: flex;
+    justify-content: space-between;
+}
+.persona{
+    border: 10px solid lightskyblue;
+    border-radius: 5px;
+    width: 18%;
+    text-align: center;
+    padding: 15px 12px 5px;
+    box-sizing: border-box;
+}
+.persona img{
+    /*border-radius:50% ;*/
+    width: 40%;
+    box-shadow: 0 0 2px green;
+    border: 2px solid green;
+}
+.persona h5,
+.persona h6{
+    margin: 0;
+    color: green;
+    /*font-weight: normal;*/
+    font-weight: bold;
+}
+.persona h5{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.persona h6{
+font-style: italic;
+}
+.persona p{
+    font-size: 11px;
+    text-align: left;
+}
+
+/* 2-Fin nosotros*/
+
+/* 3-comienzo cursos*/
+.cursos{
+    background-color: #2e64a1;
+    width: 50%;
+    text-align: center;
+    padding: 15px 12px 5px;
+    box-sizing: border-box;
+    
+} 
+.niveles{
+    width: 40%;
+
+    text-align: center;
+    padding: 15px 12px 5px;
+    box-sizing: border-box;
+}
+.cursos{
+    text-wrap: 12px;
+}
+
+/*3-fin cursos*/
+
+/*4- inicio Nuestro instituto*/
+
+.galeria{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s ease;
+
+    
+}
+ .instituto{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+ }  
+    
+
+
+.nuestro{
+    width: 50%;
+}
+
+/*4-fin nuestro instituto*/
+
+
+
+
+/* 5-inicio contacto -------------------------------------*/
+
+.contacto{
+    display: flex;
+    gap:24px ;
+}
+.contacto div{
+    width: 100%;/*detro de la separacion del gao anterior que cada uno asuma el 100%*/
+
+}
+.datos p{
+    font-size: 14px;
+}
+.datos ul li{
+    font-size: 12px;
+    list-style: none;
+}
+.formulario p{
+display: flex;/*esto sirve para poner uno al lado del otro*/
+}
+
+
+.formulario p input,
+.formulario p textarea{
+width: 70%;
+background-color: #ddd;
+border-radius: 5px;
+border: 1px solid #999;
+font-size: 14px ;
+padding: 6px 10px;
+
+}
+.formulario p label{
+    min-width: 80px;
+    display: block;
+    display: flex;
+    align-items: center;
+}
+.formulario textarea{
+    height: 150px;
+    resize: none;
+}
+/*.formulario p label.arriba{
+    align-items: start;
+}*/   
+.formulario p:nth-child(4){/*es otra manera de llamr a un hijo de alguna clase o sea no haría falta la clase "arriba" y solo lo manejamos desde el css*/
+    align-items: start;
+}
+
+.formulario input[type="submit"]{
+    background-color: green;
+    color: white;
+    box-shadow:0 0 10px rgba(0,0,0,0.4) ;
+    font-size: 14px;
+    padding: 6px;
+    width: auto;
+    cursor: pointer;
+   /* margin-left: 80px;*/
+   position: relative;
+   left: 80px;/* se puede mover tanto con un margin como con position relative*/ 
+   transition: all 0.4s ease;
+}
+.formulario input[type="submit"]:hover{
+background-color: grey;
+}
